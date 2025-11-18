@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sujetax-like — Accueil</title>
+  <meta name="description" content="Prototype inspiré — navigation multi-niveau, recherche locale et pages profondes." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header" role="banner">
+  <div class="container header-row">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="Logo Sujetax-like" class="logo" />
+      <span class="brand-text">Sujetax-like</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navigation principale" id="mainNav">
+      <ul class="nav-list">
+        <li><a href="index.html">Accueil</a></li>
+
+        <li class="has-sub">
+          <a href="section-a/index.html">Section A</a>
+          <button class="submenu-toggle" aria-expanded="false" aria-label="Ouvrir sous-menu Section A">▾</button>
+          <ul class="sub">
+            <li><a href="section-a/sous-a1.html">Sous A1</a></li>
+            <li><a href="section-a/sous-a2.html">Sous A2</a></li>
+            <li class="has-sub">
+              <a href="section-a/deep/deep1.html">Deep</a>
+              <ul class="sub">
+                <li><a href="section-a/deep/deep1.html">Deep 1</a></li>
+                <li><a href="section-a/deep/deep2.html">Deep 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="has-sub">
+          <a href="section-b/index.html">Section B</a>
+          <ul class="sub">
+            <li><a href="section-b/item1.html">Item 1</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <form id="searchForm" class="search" role="search" aria-label="Recherche sur le site">
+      <input id="searchInput" type="search" placeholder="Rechercher des pages..." aria-label="Barre de recherche" />
+      <button type="submit" aria-label="Lancer la recherche">🔎</button>
+    </form>
+
+    <button id="mobileMenuBtn" class="mobile-menu-btn" aria-expanded="false" aria-controls="mainNav">☰</button>
+  </div>
+</header>
+
+<main id="main" class="container">
+  <section class="hero">
+    <h1>Sujetax-like</h1>
+    <p>Prototype inspiré: structure multi-niveau, navigation profonde, recherche client-side et design responsive.</p>
+    <img src="images/hero.svg" alt="Bannière illustrative" class="hero-img" />
+  </section>
+
+  <section id="searchResults" class="search-results" hidden>
+    <h2>Résultats de la recherche</h2>
+    <p id="searchSummary" class="muted"></p>
+    <ul id="resultsList" class="results-list"></ul>
+  </section>
+
+  <section class="sample-content">
+    <h2>Quelques pages</h2>
+    <ul>
+      <li><a href="section-a/sous-a1.html">Sous A1</a></li>
+      <li><a href="section-a/deep/deep1.html">Deep 1</a></li>
+      <li><a href="section-b/item1.html">Item 1</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Sujetax-like — Prototype</p>
+    <nav aria-label="Plan du site">
+      <a href="sitemap.xml">Sitemap</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+:root{
+  --max-w:1200px;
+  --accent:#0b6;
+  --muted:#6b7280;
+  --bg:#ffffff;
+  --surface:#f7f8fb;
+  --radius:10px;
+}
+/* Reset & base */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin:0;color:#111;background:var(--bg);line-height:1.5;-webkit-font-smoothing:antialiased}
+.container{max-width:var(--max-w);margin:0 auto;padding:0 16px}
+.header-row{display:flex;align-items:center;gap:12px;padding:12px 0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit}
+.logo{height:36px;width:36px}
+.brand-text{font-weight:700}
+
+/* Navigation */
+.main-nav{flex:1}
+.nav-list{list-style:none;margin:0;padding:0;display:flex;gap:12px;align-items:center}
+.nav-list a{color:inherit;text-decoration:none;padding:8px 8px;border-radius:8px}
+.nav-list a:hover,.nav-list a:focus{background:rgba(0,0,0,0.04)}
+.has-sub{position:relative}
+.sub{position:absolute;left:0;top:calc(100% + 6px);background:var(--bg);border:1px solid #e6e9ef;padding:8px;list-style:none;display:none;min-width:220px;box-shadow:0 10px 30px rgba(20,30,50,0.08);z-index:60;border-radius:8px}
+.has-sub:focus-within>.sub,.has-sub:hover>.sub{display:block}
+.sub li{padding:0;margin:0}
+.sub a{display:block;padding:6px 10px}
+
+/* Search */
+.search{display:flex;gap:6px;align-items:center}
+.search input{padding:10px;border:1px solid #e6e9ef;border-radius:8px;min-width:220px}
+.search button{padding:9px;border-radius:8px;border:1px solid #e6e9ef;background:transparent;cursor:pointer}
+
+/* Mobile */
+.mobile-menu-btn{display:none;background:none;border:0;font-size:20px}
+
+/* Hero & content */
+.hero{padding:28px 0;text-align:left}
+.hero-img{max-width:100%;height:auto;border-radius:var(--radius);margin-top:12px}
+.site-footer{border-top:1px solid #eee;padding:18px 0;margin-top:36px;color:var(--muted)}
+
+.muted{color:var(--muted)}
+.results-list{list-style:none;padding:0;margin:0}
+.results-list li{padding:12px 0;border-bottom:1px dashed #eee}
+
+/* small screens */
+@media(max-width:920px){
+  .nav-list{display:none}
+  .mobile-menu-btn{display:block}
+  .main-nav.mobile-show .nav-list{display:flex;flex-direction:column;background:var(--bg);position:absolute;left:0;right:0;top:72px;padding:12px;border-bottom:1px solid #e6e9ef;z-index:70}
+  .search input{min-width:120px}
+  .header-row{gap:8px}
+}

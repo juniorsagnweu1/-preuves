@@ -1,0 +1,56 @@
+[
+  {
+    "url": "index.html",
+    "title": "Accueil",
+    "description": "Page d'accueil du prototype Sujetax-like",
+    "content": "Bienvenue sur le site prototype inspiré de Sujetax."
+  },
+  {
+    "url": "section-a/index.html",
+    "title": "Section A",
+    "description": "Page principale de la Section A",
+    "content": "Présentation générale de la Section A."
+  },
+  {
+    "url": "section-a/sous-a1.html",
+    "title": "Sous A1",
+    "description": "Présentation de Sous A1",
+    "content": "Contenu de la sous-section A1. Exemple de texte pour l'indexation."
+  },
+  {
+    "url": "section-a/sous-a2.html",
+    "title": "Sous A2",
+    "description": "Présentation de Sous A2",
+    "content": "Contenu de la sous-section A2. Exemple de texte."
+  },
+  {
+    "url": "section-a/deep/deep1.html",
+    "title": "Deep 1",
+    "description": "Page Deep 1 - exemple de page profonde",
+    "content": "Texte de la page Deep 1."
+  },
+  {
+    "url": "section-a/deep/deep2.html",
+    "title": "Deep 2",
+    "description": "Page Deep 2 - suite de la section Deep",
+    "content": "Texte de la page Deep 2."
+  },
+  {
+    "url": "section-b/index.html",
+    "title": "Section B",
+    "description": "Page principale de la Section B",
+    "content": "Présentation générale de la Section B."
+  },
+  {
+    "url": "section-b/item1.html",
+    "title": "Item 1",
+    "description": "Détail de l'item 1",
+    "content": "Fiche descriptif de Item 1."
+  },
+  {
+    "url": "contact.html",
+    "title": "Contact",
+    "description": "Comment nous contacter",
+    "content": "Formulaire et adresses."
+  }
+]
